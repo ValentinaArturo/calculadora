@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Login</title>
+    <link rel="stylesheet" href="./css/styles.css">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+</head>
+</head>
+
+<body>
+    <script src="js/login.js"></script>
+
+
+    <!-- The JS SDK Login Button -->
+    <div class="vertical-container">
+        <h1 class="titulo">Login</h1>
+        <fb:login-button scope="public_profile,email" onlogin="checkLoginState();">
+        </fb:login-button>
+        <div>
+            <div class="titulo" id="status">
+            </div>
+
+            <!-- Load the JS SDK asynchronously -->
+            <script async defer crossorigin="anonymous" src="https://connect.facebook.net/en_US/sdk.js"></script>
+</body>
+
+</html>
